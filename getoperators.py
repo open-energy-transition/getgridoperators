@@ -9,6 +9,7 @@ sparql.setReturnFormat(JSON)
 query = """
 SELECT
   ?operator ?operatorLabel
+  ?operatorType ?operatorTypeLabel
   ?country ?countryLabel
   ?website
   ?hqLabel
@@ -23,7 +24,7 @@ SELECT
 WHERE {
   VALUES ?operatorType {
     wd:Q112046  # transmission system operator
-    wd:Q472093        # electricity distribution network operator
+    wd:Q472093  # electricity distribution network operator
   }
 
   ?operator wdt:P31 ?operatorType ;
@@ -56,6 +57,8 @@ for r in results:
     rows.append({
         "operator_qid": r["operator"]["value"].split("/")[-1],
         "operator_label": r["operatorLabel"]["value"],
+        "operator_type_qid": r["operatorType"]["value"].split("/")[-1],
+        "operator_type_label": r["operatorTypeLabel"]["value"],
         "country_qid": r["country"]["value"].split("/")[-1],
         "country_label": r["countryLabel"]["value"],
         "website": r.get("website", {}).get("value"),

@@ -173,6 +173,7 @@ WHERE {
   VALUES ?operatorType {
     wd:Q112046  # transmission system operator
     wd:Q472093  # electricity distribution network operator
+    wd:Q1326624
   }
 
   ?operator wdt:P31 ?operatorType ;
@@ -231,7 +232,20 @@ print(f"✅ Retrieved {len(df_types)} unique operators by type.")
 def similarity(a, b):
     return SequenceMatcher(None, a.lower(), b.lower()).ratio()
 
+# Allowed instance types for name matches
+ALLOWED_INSTANCE_QIDS = {
+    "Q4830453",  # company
+    "Q783794",
+    "Q891723",
+    "Q1951366",
+    "Q197952",
+    "Q270791"
+}
+
 def search_wikidata(name, limit=10, fuzzy_threshold=0.6, max_fallbacks=3):
+    """
+    Search Wikidata for a name, returning only entities that are companies or electric utilities.
+    """
     def _search(query):
         url = "https://www.wikidata.org/w/api.php"
         params = {
@@ -249,13 +263,27 @@ def search_wikidata(name, limit=10, fuzzy_threshold=0.6, max_fallbacks=3):
         except Exception as e:
             print(f"Error decoding JSON for '{query}': {e}")
             return []
-        
+
         results = []
         for item in data.get("search", []):
+            qid = item["id"]
+
+            # Fetch instance of (P31) for this entity
+            entity_url = f"https://www.wikidata.org/wiki/Special:EntityData/{qid}.json"
+            entity_data = requests.get(entity_url, headers=headers).json()
+            claims = entity_data.get("entities", {}).get(qid, {}).get("claims", {})
+            instance_of_qids = {c["mainsnak"]["datavalue"]["value"]["id"] 
+                                for c in claims.get("P31", []) 
+                                if "datavalue" in c["mainsnak"]}
+
+            # Skip if not an allowed type
+            if not instance_of_qids.intersection(ALLOWED_INSTANCE_QIDS):
+                continue
+
             label = item["label"]
             score = similarity(query, label)
             if score >= fuzzy_threshold:
-                results.append((item["id"], label, score))
+                results.append((qid, label, score))
         results.sort(key=lambda x: x[2], reverse=True)
         return results
 
@@ -271,6 +299,7 @@ def search_wikidata(name, limit=10, fuzzy_threshold=0.6, max_fallbacks=3):
         else:
             break
     return []
+
 
 # Search by names
 wikidata_name_results = []
@@ -378,7 +407,6 @@ df_new_metadata = pd.DataFrame(metadata_rows)
 # ----------------------------
 
 df_combined = pd.concat([df_types, df_new_metadata], ignore_index=True)
-df_combined = df_combined.drop_duplicates(subset="operator_qid", keep="first")
 
 # Optional: merge similarity info from name search
 df_combined = df_combined.merge(
@@ -386,6 +414,8 @@ df_combined = df_combined.merge(
     on="operator_qid",
     how="left"
 )
+
+df_combined = df_combined.drop_duplicates(subset="operator_qid", keep="first")
 
 # ----------------------------
 # Save final combined CSV
