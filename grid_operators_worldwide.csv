@@ -1,0 +1,107 @@
+operator_qid,operator_label,country_qid,country_label,website,headquarters
+Q30605616,Operatori i Sistemit te Transmetimit,Q222,Albania,https://www.ost.al/,Tirana
+Q133895597,Rede Nacional de Transporte de Electricidade,Q916,Angola,http://www.rnt.co.ao/,
+Q7392701,AusNet Services,Q408,Australia,https://www.ausnetservices.com.au/,Southbank
+Q5357218,ElectraNet,Q408,Australia,http://www.electranet.com.au/,Adelaide
+Q7236786,Powerlink Queensland,Q408,Australia,http://www.powerlink.com.au/,Brisbane
+Q7833620,TransGrid,Q408,Australia,https://www.transgrid.com.au/,Sydney
+Q7988180,Western Power,Q408,Australia,https://www.westernpower.com.au/,Perth
+Q783723,Austrian Power Grid,Q40,Austria,https://www.apg.at/,Vienna
+Q16254830,Power Grid Company of Bangladesh,Q902,Bangladesh,https://www.pgcb.org.bd/PGCB/,Dhaka
+Q1131131,Elia,Q31,Belgium,https://www.elia.be/,City of Brussels
+Q5153983,Communauté Électrique du Bénin,Q962,Benin,,
+Q3050658,Elektroprivreda Republike Srpske,Q225,Bosnia and Herzegovina,https://ers.ba/,Trebinje
+Q10341099,Operador Nacional do Sistema Elétrico,Q155,Brazil,https://www.ons.org.br/,Brasília
+Q12279650,Electricity System Operator,Q219,Bulgaria,https://www.eso.bg/,Sofia
+Q4711621,Alberta Electric System Operator,Q16,Canada,https://www.aeso.ca/,Calgary
+Q4835341,BC Transmission Corporation,Q16,Canada,,
+Q3143709,Hydro One,Q16,Canada,https://www.hydroone.com,Toronto
+Q167840,Hydro-Quebec,Q16,Canada,https://www.hydroquebec.com,Hydro-Québec Building
+Q6843392,Midcontinent Independent System Operator,Q16,Canada,https://www.misoenergy.org/,Carmel
+Q3339114,Newfoundland and Labrador Hydro,Q16,Canada,http://www.nlh.nl.ca/,St. John's
+Q111731463,TransÉnergie,Q16,Canada,,
+Q7988370,Western Systems Power Pool,Q16,Canada,http://www.wspp.org/,
+Q88774656,HOPS,Q224,Croatia,,
+Q11089927,ČEPS,Q213,Czech Republic,https://www.ceps.cz/,Prague
+Q1341529,Energinet,Q35,Denmark,https://en.energinet.dk,Erritsø
+Q1341529,Energinet,Q35,Denmark,https://energinet.dk,Erritsø
+Q5359452,Elering,Q191,Estonia,https://www.elering.ee,Tallinn
+Q56294552,Eswatini Electricity Company,Q1050,Eswatini,https://www.eec.co.sz/,Mbabane
+Q1417185,Fingrid,Q33,Finland,https://www.fingrid.fi,Metsälä
+Q18688883,Kraftnät Åland,Q33,Finland,,
+Q2178795,RTE,Q142,France,https://www.rte-france.com,Paris
+Q2178795,RTE,Q142,France,https://www.rte-france.com,La Défense
+Q241331,50Hertz Transmission,Q183,Germany,https://www.50hertz.com/,Berlin
+Q477318,Amprion,Q183,Germany,https://www.amprion.net/,Dortmund
+Q108874442,Ferngas Netzgesellschaft,Q183,Germany,https://www.ferngas.de/,Schwaig bei Nürnberg
+Q1662830,TenneT TSO,Q183,Germany,https://www.tennet.eu/de/home,Bayreuth
+Q1672772,TransnetBW,Q183,Germany,https://transnetbw.de/,Stuttgart
+Q16733560,Ghana Grid Company,Q117,Ghana,https://gridcogh.com/,
+Q18161611,ADMIE,Q41,Greece,https://www.admie.gr/,Athens
+Q117846302,Transco CLSG,Q1006,Guinea,https://www.transcoclsg.org/,Abidjan
+Q88272702,MAVIR,Q28,Hungary,https://www.mavir.hu/,Budapest
+Q88272702,MAVIR,Q28,Hungary,https://www.mavir.hu/web/mavir-en,Budapest
+Q3217126,Landsnet,Q189,Iceland,http://www.landsnet.is/,Reykjavík
+Q3400886,Power Grid Corporation of India,Q668,India,http://www.powergridindia.com/,Gurgaon
+Q1310503,EirGrid,Q27,Ireland,https://www.eirgridgroup.com/,Dublin
+Q936325,Terna S.p.A.,Q38,Italy,http://www.terna.it/,Rome
+Q2989790,Compagnie ivoirienne d'electricité,Q1008,Ivory Coast,http://www.cie.ci,
+Q117846302,Transco CLSG,Q1008,Ivory Coast,https://www.transcoclsg.org/,Abidjan
+Q45893542,Q45893542,Q17,Japan,,Tokyo City
+Q6335246,KOSTT,Q1246,Kosovo,https://www.kostt.com/,
+Q16822050,Augstsprieguma tīkls,Q211,Latvia,https://www.ast.lv/,Riga
+Q117846302,Transco CLSG,Q1014,Liberia,https://www.transcoclsg.org/,Abidjan
+Q5217854,"Litgrid, AB",Q37,Lithuania,http://www.litgrid.eu/,Vilnius
+Q21036415,Creos Luxembourg,Q32,Luxembourg,http://www.creos-net.lu/,Luxembourg
+Q20429436,Moldelectrica,Q217,Moldova,http://www.moldelectrica.md/,Chișinău
+Q5187004,Crnogorski Elektroprenosni Sistem,Q236,Montenegro,http://www.tso-epcg.com/nono/eindex.php,Podgorica
+Q1327509,Elektroprivreda Crne Gore,Q236,Montenegro,http://www.epcg.com,Nikšić
+Q56294554,Mozambique Transmission Company,Q1029,Mozambique,https://www.motraco.co.mz/,Maputo
+Q1964276,NamPower,Q1030,Namibia,https://www.nampower.com.na/,Windhoek
+Q1127569,TenneT,Q55,Netherlands,https://www.tennet.eu/,Arnhem
+Q7835339,Transpower New Zealand,Q664,New Zealand,https://www.transpower.co.nz/,Wellington
+Q12908211,MEPSO,Q221,North Macedonia,http://mepso.com.mk/,Skopje
+Q116459992,SONI,Q26,Northern Ireland,https://www.soni.ltd.uk/,Belfast
+Q111737280,REN,Q20,Norway,https://www.ren.no/,Bergen
+Q111737280,REN,Q20,Norway,https://www.ren.no/,Fantoft
+Q602621,Statnett,Q20,Norway,https://statnett.no,Nydalen
+Q602621,Statnett,Q20,Norway,https://statnett.no/en,Nydalen
+Q209039,China Southern Power Grid,Q148,People's Republic of China,http://www.csg.cn/,Huangpu District
+Q209078,State Grid Corporation of China,Q148,People's Republic of China,http://www.sgcc.com.cn/,Beijing
+Q28197109,National Grid Corporation of the Philippines,Q928,Philippines,https://www.ngcp.ph,Quezon City
+Q1749435,Polskie Sieci Elektroenergetyczne,Q36,Poland,https://www.pse.pl/home,Konstancin-Jeziorna
+Q111843687,E-REDES,Q45,Portugal,https://www.e-redes.pt,Lisbon
+Q1862842,Redes Energéticas Nacionais,Q45,Portugal,http://www.ren.pt,Lisbon
+Q750324,Transelectrica,Q218,Romania,http://www.transelectrica.ro/,Bucharest
+Q3063197,FGC UES,Q159,Russia,http://www.fsk-ees.ru/eng/,Moscow
+Q18250047,Elektromreža Srbije,Q403,Serbia,http://ems.rs/,Belgrade
+Q117864256,Electricity Generation & Transmission Company,Q1044,Sierra Leone,https://egtc-sl.com,Freetown
+Q117846302,Transco CLSG,Q1044,Sierra Leone,https://www.transcoclsg.org/,Abidjan
+Q12776245,Slovenská elektrizačná prenosová sústava,Q214,Slovakia,https://www.sepsas.sk/,Bratislava
+Q5358777,Elektro-Slovenija,Q215,Slovenia,https://www.eles.si/,Ljubljana
+Q1367885,Eskom,Q258,South Africa,https://www.eskom.co.za,Sandton
+Q1551220,Red Eléctrica de España,Q29,Spain,https://www.redeia.com/es,Alcobendas
+Q942801,Svenska Kraftnät,Q34,Sweden,https://www.svk.se/,Sundbyberg Municipality
+Q2373251,Swissgrid,Q39,Switzerland,https://www.swissgrid.ch/,Aarau
+Q4050564,Tanzania Electric Supply Company Limited,Q924,Tanzania,https://www.tanesco.co.tz/,Dodoma
+Q5153983,Communauté Électrique du Bénin,Q945,Togo,,
+Q6093056,TEİAŞ,Q43,Turkey,http://www.teias.gov.tr,Ankara
+Q12132842,National Power Company Ukrenergo,Q212,Ukraine,https://ua.energy/,Kyiv
+Q115949299,NESO,Q145,United Kingdom,https://www.nationalgrideso.com/,
+Q130296594,National Energy System Operator,Q145,United Kingdom,https://www.neso.energy/,
+Q1465461,National Grid plc,Q145,United Kingdom,https://nationalgrid.com,London
+Q43080530,Scottish and Southern Electricity Networks,Q145,United Kingdom,https://www.ssen.co.uk/,
+Q4705296,Alabama Power,Q30,United States,https://www.alabamapower.com/,Birmingham
+Q4708622,Alaska Systems Coordinating Council,Q30,United States,,
+Q16850559,California Independent System Operator,Q30,United States,https://www.caiso.com/,Folsom
+Q5357475,Electric Reliability Council of Texas,Q30,United States,http://www.ercot.com,Taylor
+Q5547666,Georgia Power,Q30,United States,http://www.georgiapower.com/,Atlanta
+Q5974452,ISO New England,Q30,United States,https://www.iso-ne.com/,Holyoke
+Q6843392,Midcontinent Independent System Operator,Q30,United States,https://www.misoenergy.org/,Carmel
+Q17108791,Mississippi Power,Q30,United States,https://www.mississippipower.com/,Gulfport
+Q134973495,New York Independent System Operator,Q30,United States,,
+Q2000377,North American Electric Reliability Corporation,Q30,United States,https://www.nerc.com/,Atlanta
+Q25004450,PJM Interconnection,Q30,United States,https://www.pjm.com/,Valley Forge
+Q7571339,Southwest Power Pool,Q30,United States,http://www.spp.org/,Little Rock
+Q1131445,Copperbelt Energy Corporation,Q953,Zambia,https://www.cec.com.zm/,Nkana
+Q8063035,ZESCO,Q953,Zambia,https://www.zesco.co.zm/,Lusaka
