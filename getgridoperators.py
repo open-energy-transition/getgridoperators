@@ -1,5 +1,5 @@
 names = [
-    "AltaLink", "ATCO", "BC Hydro", "Emera Incorporated", "ENMAX Power Corporation",
+    "International Renewable Energy Agency", "International Energy Agency", "AltaLink", "ATCO", "BC Hydro", "Emera Incorporated", "ENMAX Power Corporation",
     "Hydro One", "Hydro-Québec", "Manitoba Hydro", "Nalcor Energy", "New Brunswick Power (NB Power)",
     "Nova Scotia Power Incorporated (NSPI)", "SaskPower",
     "Ameren Corporation", "American Electric Power (AEP)", "American Transmission Company (ATC)",
@@ -1019,6 +1019,7 @@ ALLOWED_INSTANCE_QIDS = {
     "Q163740", #nonprofit organization
     "Q4539", # cooperative
     "Q2316331", #electric power industry
+    "Q245065" # intergovernmental organization"
 }
 
 def search_wikidata(name, limit=10, fuzzy_threshold=0.6, max_fallbacks=3):
