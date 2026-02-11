@@ -1019,7 +1019,12 @@ ALLOWED_INSTANCE_QIDS = {
     "Q163740", #nonprofit organization
     "Q4539", # cooperative
     "Q2316331", #electric power industry
-    "Q245065" # intergovernmental organization"
+    "Q245065", # intergovernmental organization"
+    "Q43229", #organization
+    "Q2396633", # state property
+    "Q1639780", # regulatory agency
+    "Q2659904", # government organization
+    "Q55657615", # commission
 }
 
 def search_wikidata(name, limit=10, fuzzy_threshold=0.6, max_fallbacks=3):
