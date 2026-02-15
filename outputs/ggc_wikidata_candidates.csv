@@ -1,3 +1,48 @@
 source,category,operator_qid,operator_label,operator_type_qid,operator_type_label,country_qid,country_label,website,description_en
+wikidata,TSO,Q3400886,Power Grid Corporation of India,Q112046,transmission system operator for electricity,Q668,India,http://www.powergridindia.com/,Government of India enterprise
+wikidata,Ministry,Q4294844,Ministry of Power,Q19973795,ministry of energy,Q668,India,http://powermin.nic.in,Ministry of Government of India
+wikidata,Ministry,Q116825870,Energy and Petrochemicals Department,Q19973795,ministry of energy,Q668,India,https://guj-epd.gujarat.gov.in,department of Government of Gujarat
+wikidata,Regulator,Q16169603,Korea Power Exchange,Q1639780,regulatory agency,Q884,South Korea,https://www.kpx.or.kr/,Electric Power Grid and Market Operator in Korea
+wikidata,Ministry,Q491047,"Ministry of Trade, Industry and Energy",Q19973795,ministry of energy,Q884,South Korea,http://www.motie.go.kr/,South Korean government agency
+wikidata,Ministry,Q12592061,Ministry of Energy and Resources,Q19973795,ministry of energy,Q884,South Korea,,
+wikidata,TSO,Q1749435,Polskie Sieci Elektroenergetyczne,Q112046,transmission system operator for electricity,Q36,Poland,https://www.pse.pl/home,Polish transmission system operator
+wikidata,Ministry,Q21779179,Ministry of Energy,Q19973795,ministry of energy,Q36,Poland,http://www.me.gov.pl/,ministry in Poland
+wikidata,Ministry,Q36347675,Ministry of Energy,Q19973795,ministry of energy,Q843,Pakistan,,"Pakistan government executive body concerning petroleum, electricity"
+wikidata,TSO,Q28197109,National Grid Corporation of the Philippines,Q112046,transmission system operator for electricity,Q928,Philippines,https://www.ngcp.ph,consortium of electric corporations which is a transmission system operator for the Philippines
+wikidata,Regulator,Q108508848,Energy Regulatory Commission,Q1639780,regulatory agency,Q928,Philippines,https://www.erc.gov.ph/,regulatory agency supervising the Philippines' electric power industry
+wikidata,TSO,Q45893542,Q45893542,Q112046,transmission system operator for electricity,Q17,Japan,,former electricity transmission operator in Japan
+wikidata,Ministry,Q12490739,Ministry of Energy and Mineral Resources,Q19973795,ministry of energy,Q252,Indonesia,https://www.esdm.go.id/,Indonesian ministry concerning energy and mineral resources
+wikidata,Ministry,Q5260283,Department of Energy,Q19973795,ministry of energy,Q258,South Africa,,South Africa
+wikidata,Ministry,Q98152568,Department of Mineral Resources and Energy,Q19973795,ministry of energy,Q258,South Africa,,department of the South African government
+wikidata,TSO,Q5357218,ElectraNet,Q112046,transmission system operator for electricity,Q408,Australia,http://www.electranet.com.au/,Electricity transmission in South Australia
+wikidata,TSO,Q7236786,Powerlink Queensland,Q112046,transmission system operator for electricity,Q408,Australia,http://www.powerlink.com.au/,"transmission system operator in Queensland, Australia"
+wikidata,TSO,Q7833620,TransGrid,Q112046,transmission system operator for electricity,Q408,Australia,https://www.transgrid.com.au/,transmission system operator in Australia
+wikidata,TSO,Q7988180,Western Power,Q112046,transmission system operator for electricity,Q408,Australia,https://www.westernpower.com.au/,government-owned electricity transmission and distribution corporation in Western Australia
+wikidata,TSO,Q111081969,Evoenergy,Q1326624,electricity supply company,Q408,Australia,https://www.evoenergy.com.au/,electricity and gas grid operator servicing the Australian Capital Territory and surrounds in New South Wales
+wikidata,Ministry,Q1191440,"Department of Infrastructure, Energy and Resources",Q19973795,ministry of energy,Q408,Australia,http://www.dier.tas.gov.au/,Tasmanian government department
+wikidata,TSO,Q10341099,Operador Nacional do Sistema Elétrico,Q112046,transmission system operator for electricity,Q155,Brazil,https://www.ons.org.br/,Brazilian electricity grid operator
+wikidata,Regulator,Q4095715,Brazilian Electricity Regulatory Agency,Q1639780,regulatory agency,Q155,Brazil,http://www.aneel.gov.br,
+wikidata,Regulator,Q18474623,"Agência Estadual de Regulação de Serviços Públicos de Energia, Transportes e Comunicações da Bahia",Q1639780,regulatory agency,Q155,Brazil,http://www.agerba.ba.gov.br/,
+wikidata,Ministry,Q2602051,Ministry of Mines and Energy,Q19973795,ministry of energy,Q155,Brazil,http://www.mme.gov.br,Brazilian government ministry
 wikidata,TSO,Q1114680,Comisión Federal de Electricidad,Q1326624,electricity supply company,Q96,Mexico,https://www.cfe.mx,state-owned electric utility of Mexico
 wikidata,Ministry,Q750165,Secretariat of Energy,Q19973795,ministry of energy,Q96,Mexico,http://www.sener.gob.mx,
+wikidata,Ministry,Q4294840,Ministry of Electricity and Renewable Energy,Q19973795,ministry of energy,Q79,Egypt,http://www.moee.gov.eg/test_new/home.aspx,Egyptian ministry
+wikidata,Ministry,Q6867411,Ministry of Energy and Natural Resources,Q19973795,ministry of energy,Q833,Malaysia,https://www.ketsa.gov.my/ms-my/Pages/default.aspx,ministry of the Government of Malaysia
+wikidata,Ministry,Q19604790,Ministry of Energy and Mineral Resources (Lagos),Q19973795,ministry of energy,Q1033,Nigeria,https://memr.lagosstate.gov.ng/,"ministry of energy and mineral resources in the federal state of Lagos, part of the federal country of Nigeria"
+wikidata,TSO,Q1465461,National Grid plc,Q112046,transmission system operator for electricity,Q145,United Kingdom,https://nationalgrid.com,British multinational electricity and gas utility company
+wikidata,TSO,Q43080530,Scottish and Southern Electricity Networks,Q112046,transmission system operator for electricity,Q145,United Kingdom,https://www.ssen.co.uk/,electricity distribution network operator in the UK
+wikidata,TSO,Q114423668,SSEN Transmission,Q1326624,electricity supply company,Q145,United Kingdom,https://www.ssen-transmission.co.uk/,electricity transmission network operator in Scotland
+wikidata,TSO,Q114436108,SP Transmission,Q1326624,electricity supply company,Q145,United Kingdom,,Electricity transmission network operator in Scotland
+wikidata,TSO,Q114453512,National Grid Electricity Transmission,Q1326624,electricity supply company,Q145,United Kingdom,,Electricity transmission network operator in England
+wikidata,TSO,Q119292843,Transmission Capital Partners,Q1326624,electricity supply company,Q145,United Kingdom,https://www.transmissioncapital.com/,owner of offshore wind power transmission assets in the UK
+wikidata,TSO,Q119293404,Blue Transmission,Q1326624,electricity supply company,Q145,United Kingdom,https://www.bluetransmission.com/,owner of offshore wind power transmission assets in the UK
+wikidata,TSO,Q130296594,National Energy System Operator,Q112046,transmission system operator for electricity,Q145,United Kingdom,https://www.neso.energy/,government-owned UK national energy distribution company
+wikidata,Regulator,Q5357798,Electricity Commissioners,Q1639780,regulatory agency,Q145,United Kingdom,,UK electricity industry regulator
+wikidata,Ministry,Q3044733,Department of Energy and Climate Change,Q19973795,ministry of energy,Q145,United Kingdom,https://www.gov.uk/decc,former department of the UK Government
+wikidata,Ministry,Q25927629,"Department for Business, Energy and Industrial Strategy",Q19973795,ministry of energy,Q145,United Kingdom,https://www.gov.uk/government/organisations/department-for-business-energy-and-industrial-strategy,defunct department of the UK Government
+wikidata,TSO,Q1551220,Red Eléctrica de España,Q112046,transmission system operator for electricity,Q29,Spain,https://www.redeia.com/es,Spanish electricity transmission system operator
+wikidata,TSO,Q126192574,Logos Energía,Q1326624,electricity supply company,Q29,Spain,https://www.logosenergia.es,Energy trading company
+wikidata,Ministry,Q27685329,"Ministry of Energy, Tourism, and Digital Agenda",Q19973795,ministry of energy,Q29,Spain,http://www.minetad.gob.es/,government of Spain
+wikidata,TSO,Q936325,Terna S.p.A.,Q112046,transmission system operator for electricity,Q38,Italy,http://www.terna.it/,transmission system operator based in Rome
+wikidata,TSO,Q3050569,Electricity Generating Authority of Thailand,Q1326624,electricity supply company,Q869,Thailand,https://www.egat.co.th/,"state enterprise responsible for electric power generation, transmission and sales in Thailand"
+wikidata,Ministry,Q6866887,Ministry of Energy,Q19973795,ministry of energy,Q869,Thailand,https://www.energy.go.th/,ministry of Thailand
