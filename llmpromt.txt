@@ -1,1 +1,121 @@
-You are building a national electricity high precision ecosystem dataset. For EACH country provided, identify the PRIMARY national-level institutions across the full electricity ecosystem. CRITICAL RULES: 1) Governance-aware listing: - If the country is centralized: return ONLY the single primary institution per category. - If the country legally designates multiple national operators (multi-TSO or ISO/RTO model), list ALL primary entities but cap at 6 per category. - Do NOT include provincial, municipal, or subnational bodies. - Do NOT include NGOs or associations inside governance categories. 2) Language rules: - Use the official local-language name as the main name. - If an official English version is widely used, include it in the also_known_as column. - Preserve correct spelling and diacritics. 3) Filtering: - Only national-level institutions. - Avoid minor organizations. - If unsure, include but set confidence to MED or LOW. --------------------------------------------------------- CATEGORIES --------------------------------------------------------- GOVERNANCE TSO ElectricityRegulator EnergyMinistry MARKET & OPERATION MarketOperator ISO_RTO (only if distinct from TSO) SystemPlanningBody AGENCIES RenewablesAgency NuclearAgency ECOSYSTEM TSOAssociation EnergyIndustryAssociation RenewableIndustryAssociation AdvisoryCouncil EnergyResearchInstitute --------------------------------------------------------- OUTPUT FORMAT REQUIREMENTS: Return ONLY CSV. Do not include explanations. Do not include markdown formatting. Do not include code blocks. Columns must be exactly: country_label,primary_language,category,name,also_known_as,official_website,confidence,evidence,comment One row per institution. If a category has no institution for a country, do not create rows for it. --------------------------------------------------------- Now process the following countries:
+You are building a high precision national electricity ecosystem dataset.
+
+For EACH country provided, identify the PRIMARY national-level institutions across the full electricity ecosystem.
+
+CRITICAL RULES:
+
+Governance-aware listing:
+
+If the country is centralized: return ONLY the single primary institution per category.
+
+If the country legally designates multiple national operators (multi-TSO or ISO/RTO model), list ALL primary entities but cap at 6 per category.
+
+Do NOT include provincial, municipal, or subnational bodies.
+
+Do NOT include NGOs or associations inside governance categories.
+
+Language rules:
+
+Use the official local-language name as the main name.
+
+If an official English version is widely used, include it in the also_known_as column.
+
+Preserve correct spelling and diacritics.
+
+Filtering:
+
+Only national-level institutions.
+
+Avoid minor organizations.
+
+If unsure, include but set confidence to MED or LOW.
+
+CATEGORIES
+
+GOVERNANCE
+TSO
+ElectricityRegulator
+EnergyMinistry
+
+MARKET & OPERATION
+MarketOperator
+ISO_RTO (only if distinct from TSO)
+SystemPlanningBody
+
+AGENCIES
+RenewablesAgency
+NuclearAgency
+
+ECOSYSTEM
+TSOAssociation
+EnergyIndustryAssociation
+RenewableIndustryAssociation
+AdvisoryCouncil
+EnergyResearchInstitute
+
+OUTPUT FORMAT REQUIREMENTS
+
+The output must be a CSV file.
+
+Columns must be exactly:
+
+country_label,primary_language,category,name,also_known_as,official_website,confidence,evidence,comment
+
+Rules:
+
+One row per institution.
+
+If a category has no institution for a country, do not create rows for it.
+
+Do not merge multiple institutions into one row.
+
+All columns must be present in every row (use "" if unknown).
+
+Preserve UTF-8 encoding and diacritics.
+
+Use comma-separated values only.
+
+DUPLICATION CONTROL (critical):
+- Do NOT repeat the same institution multiple times within a country unless it truly plays distinct statutory roles.
+- If the same institution legitimately appears in multiple categories (e.g., AEMO as both TSO and MarketOperator), keep it, but:
+  - Use the same exact spelling in the name field across categories.
+  - In comment, explicitly state: "Same institution as <other category>; retained due to distinct role."
+- If two categories would otherwise contain the same institution but the role is not truly distinct, keep it only in the most appropriate category and leave the other category with no row.
+- Never output duplicate rows with identical (country_label, category, name).
+
+
+OUTPUT DELIVERY INSTRUCTION (MANDATORY)
+
+You must generate a CSV FILE as the final output.
+
+Do NOT display the table in the UI.
+Do NOT render the CSV inline as formatted text.
+Do NOT provide explanations.
+Do NOT include markdown.
+Do NOT include code blocks.
+
+The CSV file must:
+
+Be properly formatted (UTF-8 encoding).
+
+Use comma separators.
+
+Contain exactly the required columns in the correct order.
+
+Be fully populated with one row per institution.
+
+Be downloadable as a file.
+
+File name format:
+national_electricity_ecosystem_<date>.csv
+
+If file generation is not possible, return raw CSV only (no commentary, no markdown, no explanations).
+
+Return only a generated CSV file. No UI rendering. No explanations. No markdown.
+
+Now process the following countries:
+Australia
+Brazil
+Mexico
+Türkiye
+Vietnam
