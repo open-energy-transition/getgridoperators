@@ -14,7 +14,7 @@ FIELDS = [
     "country_qid",
     "country_label",
     "website",
-    "description_en"
+    "description_en",
 ]
 
 def write_csv(path: str, rows: List[Dict]) -> None:
