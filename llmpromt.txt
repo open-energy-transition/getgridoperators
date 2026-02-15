@@ -53,27 +53,37 @@ RenewableIndustryAssociation
 AdvisoryCouncil
 EnergyResearchInstitute
 
-OUTPUT FORMAT REQUIREMENTS
+OUTPUT FORMAT OVERRIDE (MANDATORY)
 
-The output must be a CSV file.
+Do NOT output raw CSV.
 
-Columns must be exactly:
+Do NOT output markdown code blocks.
 
-country_label,primary_language,category,name,also_known_as,official_website,confidence,evidence,comment
+Output must be a clean readable table.
 
-Rules:
+Use a simple pipe-delimited table format.
 
-One row per institution.
+Include a header row.
 
-If a category has no institution for a country, do not create rows for it.
+Keep one row per line.
 
-Do not merge multiple institutions into one row.
+No blank lines inside the table.
 
-All columns must be present in every row (use "" if unknown).
+No explanations.
 
-Preserve UTF-8 encoding and diacritics.
+No commentary.
 
-Use comma-separated values only.
+No wrapping text.
+
+All fields must remain single-line.
+
+Preserve exact schema column order.
+
+Schema order must be:
+
+country_label | primary_language | category | name_local | name_english | official_website | confidence | statutory_role | notes
+
+The table must be directly copy-pasteable into Excel or Google Sheets.
 
 DUPLICATION CONTROL (critical):
 - Do NOT repeat the same institution multiple times within a country unless it truly plays distinct statutory roles.
