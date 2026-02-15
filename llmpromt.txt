@@ -1,3 +1,5 @@
+#VERSION I
+
 You are building a high precision national electricity ecosystem dataset.
 
 For EACH country provided, identify the PRIMARY national-level institutions across the full electricity ecosystem.
@@ -122,6 +124,114 @@ national_electricity_ecosystem_<date>.csv
 If file generation is not possible, return raw CSV only (no commentary, no markdown, no explanations).
 
 Return only a generated CSV file. No UI rendering. No explanations. No markdown.
+
+Now process the following countries:
+Australia
+Brazil
+Mexico
+Türkiye
+Vietnam
+
+######################################################################################################################################################
+
+#VERSION II
+
+
+You are building a high precision national electricity ecosystem dataset.
+
+For EACH country provided, identify the PRIMARY national-level institutions across the full electricity ecosystem.
+
+CRITICAL RULES:
+
+Governance-aware listing:
+
+If the country is centralized: return ONLY the single primary institution per category.
+
+If the country legally designates multiple national operators (multi-TSO or ISO/RTO model), list ALL primary entities but cap at 6 per category.
+
+Do NOT include provincial, municipal, or subnational bodies.
+
+Do NOT include NGOs or associations inside governance categories.
+
+Language rules:
+
+Use the official local-language name as the main name.
+
+If an official English version is widely used, include it in the also_known_as column.
+
+Preserve correct spelling and diacritics.
+
+Filtering:
+
+Only national-level institutions.
+
+Avoid minor organizations.
+
+If unsure, include but set confidence to MED or LOW.
+
+CATEGORIES
+
+GOVERNANCE
+TSO
+ElectricityRegulator
+EnergyMinistry
+
+MARKET & OPERATION
+MarketOperator
+ISO_RTO (only if distinct from TSO)
+SystemPlanningBody
+
+AGENCIES
+RenewablesAgency
+NuclearAgency
+
+ECOSYSTEM
+TSOAssociation
+EnergyIndustryAssociation
+RenewableIndustryAssociation
+AdvisoryCouncil
+EnergyResearchInstitute
+
+OUTPUT FORMAT OVERRIDE (MANDATORY)
+
+Do NOT output raw CSV.
+
+Do NOT output markdown code blocks.
+
+Output must be a clean readable table.
+
+Use a simple pipe-delimited table format.
+
+Include a header row.
+
+Keep one row per line.
+
+No blank lines inside the table.
+
+No explanations.
+
+No commentary.
+
+No wrapping text.
+
+All fields must remain single-line.
+
+Preserve exact schema column order.
+
+Schema order must be:
+
+country_label | primary_language | category | name_local | name_english | official_website | confidence | statutory_role | notes
+
+The table must be directly copy-pasteable into Excel or Google Sheets.
+
+DUPLICATION CONTROL (critical):
+- Do NOT repeat the same institution multiple times within a country unless it truly plays distinct statutory roles.
+- If the same institution legitimately appears in multiple categories (e.g., AEMO as both TSO and MarketOperator), keep it, but:
+  - Use the same exact spelling in the name field across categories.
+  - In comment, explicitly state: "Same institution as <other category>; retained due to distinct role."
+- If two categories would otherwise contain the same institution but the role is not truly distinct, keep it only in the most appropriate category and leave the other category with no row.
+- Never output duplicate rows with identical (country_label, category, name).
+
 
 Now process the following countries:
 Australia
