@@ -340,7 +340,7 @@ OUTPUT FORMAT OVERRIDE (MANDATORY)
 * All fields must remain single-line.
 
 NEW COLUMNS TO APPEND (in this exact order)
-tool_name | tool_category | use_case | evidence_strength | source_type | source_title | source_date | source_link | exact_snippet_or_quote | why_it_supports_the_claim | notes
+tool_name | tool_category | use_case | evidence_strength | source_type | source_title | source_date | source_link | exact_snippet_or_quote | why_it_supports_the_claim | comments
 
 INPUT I WILL PROVIDE
 I will paste:
